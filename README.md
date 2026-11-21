@@ -1,5 +1,7 @@
 # 汪卓燃个人网站 · 前端交接
 
+**线上网站 / Live site：** https://jackwzr1111-ui.github.io/zhuoran-wang-site/
+
 这是 wang-zhuoran.jackandwzr.chatgpt.site 公开第 3 版的完整静态站。首页和四个案例均有中文、English、Bahasa Melayu 三种版本，共 15 页。交接基线为 2026 年 11 月 22 日，源码提交为 `1dfd3e0f71077c62e1efcf2e7ccbd7211a26865a`。[查看线上基线](https://wang-zhuoran.jackandwzr.chatgpt.site/)
 
 ## 先跑起来
