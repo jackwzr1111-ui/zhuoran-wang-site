@@ -257,7 +257,8 @@
       "focusLabel": "方向",
       "tickerLabel": "研究覆盖的品种与市场",
       "emailLabel": "邮箱",
-      "emailButton": "发邮件给我"
+      "emailButton": "发邮件给我",
+      "schoolEmailLabel": "学校邮箱"
     },
     "highlights": {
       "ferrous": {
@@ -674,7 +675,8 @@
       "focusLabel": "Focus",
       "tickerLabel": "Markets covered in my work",
       "emailLabel": "Email",
-      "emailButton": "Email me"
+      "emailButton": "Email me",
+      "schoolEmailLabel": "University email"
     },
     "highlights": {
       "ferrous": {
@@ -1091,7 +1093,8 @@
       "focusLabel": "Fokus",
       "tickerLabel": "Pasaran yang diliputi dalam kerja saya",
       "emailLabel": "E-mel",
-      "emailButton": "Hantar e-mel"
+      "emailButton": "Hantar e-mel",
+      "schoolEmailLabel": "E-mel universiti"
     },
     "highlights": {
       "ferrous": {

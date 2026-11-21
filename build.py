@@ -10,7 +10,8 @@ from xml.sax.saxutils import escape as xml_escape
 ROOT = Path(__file__).resolve().parent
 DIST = ROOT / 'dist'
 LINKEDIN = 'https://www.linkedin.com/in/zhuoran-wang-151437325/'
-EMAIL = '26067577@siswa.um.edu.my'
+EMAIL = 'jackwangzhuoran@gmail.com'
+SCHOOL_EMAIL = '26067577@siswa.um.edu.my'
 LAB = 'https://zhuoran-frontdesk-lab.jackandwzr.chatgpt.site'
 # Google Search Console ownership token for the GitHub Pages property. Keep it, or verification is lost.
 GOOGLE_SITE_VERIFICATION = '85ujjiV8bpENyZ2mHrsleQaIXhjzl0w-IllRL5oOpG0'
@@ -207,6 +208,7 @@ def contact_band(lang, anchor=True):
     <div class="contact-actions">
       <a class="button-light" href="{LINKEDIN}">{h(ui['contactButton'])} ↗</a>
       <a class="contact-email" href="mailto:{EMAIL}"><span>{h(ui['emailLabel'])}</span>{EMAIL}</a>
+      <a class="contact-email" href="mailto:{SCHOOL_EMAIL}"><span>{h(ui['schoolEmailLabel'])}</span>{SCHOOL_EMAIL}</a>
     </div>
   </div>
 </section>"""
