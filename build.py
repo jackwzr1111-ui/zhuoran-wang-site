@@ -156,9 +156,11 @@ def page(site, lang, body, headline, description, case=None, script=False):
 <meta property="og:site_name" content="{SITE_NAME}">
 <meta property="og:type" content="{'article' if case else 'website'}">
 <script type="application/ld+json">{schema}</script>
-<link rel="stylesheet" href="{site.href('/style.css')}">{zoom}
+<link rel="preload" href="{site.href('/fonts/instrument-serif-latin-400-normal.woff2')}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{site.href('/style.css')}">
+<script src="{site.href('/site.js')}" defer></script>{zoom}
 </head>
-<body>
+<body class="{'page-case' if case else 'page-home'}">
 <a class="skip" href="#main">{h(ui['skip'])}</a>
 <header class="header">
   <div class="frame header-inner">
@@ -166,14 +168,17 @@ def page(site, lang, body, headline, description, case=None, script=False):
     <nav class="site-nav" aria-label="{h(ui['mainNav'])}">
       <a href="{home}#work">{h(lang['work'])}</a>
       <a href="{home}#experience">{h(lang['exp'])}</a>
+      <a href="{home}#contact">{h(ui['contactNav'])}</a>
     </nav>
     <nav class="languages" aria-label="{h(ui['langNav'])}">{switch}</nav>
   </div>
 </header>
 {body}
-<footer class="frame footer">
-  <span>{h(lang['name'])} · {h(lang['location'])}</span>
-  <div><a href="{LAB}">{h(lang['practice'])} ↗</a><a href="{LINKEDIN}">LinkedIn ↗</a></div>
+<footer class="footer">
+  <div class="frame footer-inner">
+    <span>{h(lang['name'])} · {h(lang['location'])}</span>
+    <div><a href="{LAB}">{h(lang['practice'])} ↗</a><a href="{LINKEDIN}">LinkedIn ↗</a></div>
+  </div>
 </footer>
 </body>
 </html>
@@ -187,38 +192,98 @@ def metrics(rows):
     return f'<dl class="metrics">{items}</dl>'
 
 
+def contact_band(lang, anchor=True):
+    ui = lang['ui']
+    ident = ' id="contact"' if anchor else ''
+    return f"""<section class="contact-band"{ident} aria-labelledby="contact-title{'' if anchor else '-case'}">
+  <div class="frame contact-inner">
+    <div>
+      <p class="eyebrow">{h(ui['contactNav'])}</p>
+      <h2 id="contact-title{'' if anchor else '-case'}">{h(ui['contactTitle'])}</h2>
+      <p>{h(ui['contactText'])}</p>
+    </div>
+    <a class="button-light" href="{LINKEDIN}">{h(ui['contactButton'])} ↗</a>
+  </div>
+</section>"""
+
+
+def card_cover(lang, slug):
+    """Small visual for each case card, built from the case's own data."""
+    hl = lang.get('highlights', {}).get(slug, {})
+    if slug == 'ferrous' and hl:
+        terms = ''.join(
+            (f'<span class="op">−</span>' if i else '') + f'<b>{h(t)}</b>'
+            for i, (t, _) in enumerate(hl['terms']))
+        return f'<div class="cover cover-formula" aria-hidden="true"><span class="cover-label">{h(hl["title"])}</span><p>{terms}</p></div>'
+    if slug == 'citic-futures' and hl:
+        decks = ''.join(f'<span class="mini-deck"><b>{h(pages)}</b><small>{h(name)}</small></span>'
+                        for name, pages in hl['decks'])
+        return f'<div class="cover cover-decks" aria-hidden="true">{decks}</div>'
+    if slug == 'tusstar-membership':
+        _, *steps, _ = lang['demo']
+        items = ''.join(f'<li><span>{n}</span>{h(step)}</li>' for n, step in enumerate(steps, 1))
+        return f'<div class="cover cover-steps" aria-hidden="true"><ol>{items}</ol></div>'
+    return ''
+
+
 def homepage(site, lang):
     ui = lang['ui']
+    pr = lang['profile']
     palm, *other = lang['cases']
     featured = site.href(url(lang, palm[0]))
-    rows = ''.join(
-        f'<article class="project-row"><p class="meta">{h(case_kind(lang, c))}</p>'
-        f'<div><h3><a class="row-link" href="{site.href(url(lang, c[0]))}">{h(c[2])}</a></h3><p>{h(c[3])}</p></div>'
-        f'<span class="jump" aria-hidden="true">↗</span></article>'
+    cards = ''.join(
+        f'<article class="case-card reveal">{card_cover(lang, c[0])}'
+        f'<div class="case-copy"><p class="meta">{h(case_kind(lang, c))}</p>'
+        f'<h3><a class="row-link" href="{site.href(url(lang, c[0]))}">{h(c[2])}</a></h3>'
+        f'<p>{h(c[3])}</p><span class="text-link" aria-hidden="true">{h(lang["read"])} ↗</span></div></article>'
         for c in other
     )
     jobs = ''.join(
-        f'<div class="job"><div><h3>{h(job)}</h3><p class="meta">{h(role)}</p></div>'
-        f'<div><p>{h(desc)}</p>'
+        f'<li class="job reveal"><p class="job-date">{h(dates)}</p>'
+        f'<div class="job-head"><h3>{h(job)}</h3><p class="meta">{h(role)}</p></div>'
+        f'<div class="job-body"><p>{h(desc)}</p>'
         + (f'<a class="text-link" href="{site.href(url(lang, slug))}">{h(lang["read"])} ↗</a>' if slug else '')
-        + '</div></div>'
-        for job, role, desc, slug in lang['jobs']
+        + '</div></li>'
+        for job, role, desc, slug, dates in lang['jobs']
     )
-    body = f"""<main id="main" class="frame">
+    stats = ''.join(f'<div><dt>{h(label)}</dt><dd>{h(value)}</dd></div>' for value, label in pr['stats'])
+    focus = ''.join(f'<li>{h(x)}</li>' for x in pr['focus'])
+    tick = ''.join(f'<span>{h(t)}</span>' for t in pr['tickers'])
+    projects = ''.join(
+        f'<article class="project reveal"><p class="meta">{h(meta)}</p><h3>{h(title)}</h3>'
+        f'<p>{h(desc)}</p><p class="disclaimer">{h(note)}</p></article>'
+        for title, meta, desc, note in pr['projects']
+    )
+    edu = ''.join(f'<li><strong>{h(school)}</strong><span>{h(degree)}</span><span class="meta">{h(dates)}</span></li>'
+                  for school, degree, dates in pr['education'])
+    tools = ''.join(f'<li>{h(t)}</li>' for t in pr['tools'])
+    creds = ''.join(f'<li>{h(t)}</li>' for t in pr['credentials'])
+    langs = ''.join(f'<li><strong>{h(n)}</strong> <span>{h(level)}</span></li>' for n, level in pr['languages'])
+    beyond = ''.join(f'<li>{h(x)}</li>' for x in pr['beyond'])
+    body = f"""<main id="main">
 <section class="hero">
-  <div class="hero-id">
-    <p class="meta">{h(lang['degree'])}</p>
-    <h1>{h(lang['name'])}</h1>
-    <p class="hero-role">{h(lang['title'])}</p>
+  <div class="frame hero-grid">
+    <div class="hero-id">
+      <p class="eyebrow">{h(lang['degree'])}</p>
+      <h1>{h(lang['name'])}</h1>
+      <p class="hero-role">{h(lang['title'])}</p>
+    </div>
+    <div class="hero-intro">
+      <p>{h(lang['intro'])}</p>
+      <ul class="focus" aria-label="{h(ui['focusLabel'])}">{focus}</ul>
+      <a class="hero-latest" href="{featured}"><span class="tag">{h(ui['lead'])}</span><span class="hero-latest-title">{h(palm[2])} ↗</span></a>
+      <p class="actions"><a class="button-light" href="#work">{h(lang['work'])} ↓</a><a class="text-link" href="{LINKEDIN}">LinkedIn ↗</a></p>
+    </div>
   </div>
-  <div class="hero-intro">
-    <p>{h(lang['intro'])}</p>
-    <p class="actions"><a class="text-link" href="{LINKEDIN}">LinkedIn ↗</a></p>
+  <div class="frame"><dl class="stats">{stats}</dl></div>
+  <div class="ticker" role="img" aria-label="{h(ui['tickerLabel'])}: {h(' · '.join(pr['tickers']))}">
+    <div class="ticker-track" aria-hidden="true">{tick}{tick}{tick}{tick}</div>
   </div>
 </section>
-<section id="work" class="work" aria-labelledby="work-title">
+<div class="frame">
+<section id="work" class="work section" aria-labelledby="work-title">
   <div class="section-title"><h2 id="work-title">{h(lang['work'])}</h2></div>
-  <article class="featured">
+  <article class="featured reveal">
     <div class="featured-copy">
       <p class="tag">{h(ui['lead'])}</p>
       <p class="meta">{h(case_kind(lang, palm))}</p>
@@ -231,12 +296,28 @@ def homepage(site, lang):
       <figcaption>{h(lang['labels'][0])} · {h(palm[4])}</figcaption>
     </figure>
   </article>
-  {rows}
+  <div class="case-grid">{cards}</div>
 </section>
-<section id="experience" class="experience" aria-labelledby="experience-title">
+<section id="experience" class="experience section" aria-labelledby="experience-title">
   <div class="section-title"><h2 id="experience-title">{h(lang['exp'])}</h2></div>
-  {jobs}
+  <ol class="timeline">{jobs}</ol>
 </section>
+<section class="projects section" aria-labelledby="projects-title">
+  <div class="section-title"><h2 id="projects-title">{h(ui['projects'])}</h2></div>
+  <div class="project-grid">{projects}</div>
+</section>
+<section class="profile section" aria-labelledby="profile-title">
+  <div class="section-title"><h2 id="profile-title">{h(ui['profileTitle'])}</h2></div>
+  <div class="profile-grid">
+    <div class="reveal"><h3>{h(ui['education'])}</h3><ul class="edu">{edu}</ul></div>
+    <div class="reveal"><h3>{h(ui['tools'])}</h3><ul class="chips">{tools}</ul>
+      <h3 class="sub">{h(ui['credentials'])}</h3><ul class="plain">{creds}</ul></div>
+    <div class="reveal"><h3>{h(ui['languages'])}</h3><ul class="langs">{langs}</ul>
+      <h3 class="sub">{h(ui['beyond'])}</h3><ul class="plain">{beyond}</ul></div>
+  </div>
+</section>
+</div>
+{contact_band(lang)}
 </main>"""
     return page(site, lang, body, lang['title'], lang['intro'])
 
@@ -332,7 +413,8 @@ def casepage(site, lang, case):
   <h2 id="related-title">{h(ui['related'])}</h2>
   <ul>{related}</ul>
 </aside>
-</main>"""
+</main>
+{contact_band(lang, anchor=False)}"""
     if report:
         body += f"""
 <dialog class="viewer" aria-label="{h(ui['zoom'])}" data-fit="{h(ui['zoomFit'])}" data-native="{h(ui['zoomNative'])}" data-double="{h(ui['zoomDouble'])}" data-close="{h(ui['close'])}"></dialog>"""

@@ -175,22 +175,32 @@
     ],
     "jobs": [
       [
-        "中信期货",
-        "总部国际业务部实习",
-        "整理境内外期货数据，制作 QFI 中英文业务材料，撰写境外机构与产业客户研究简报。",
-        "citic-futures"
-      ],
-      [
         "启迪之星（马来西亚）",
         "行政与运营实习",
         "梳理生态会员 2.0 方案和 SOP，搭建会员管理网页，参与中马科创与产业对接活动。",
-        "tusstar-membership"
+        "tusstar-membership",
+        "2026 – 至今"
+      ],
+      [
+        "中信期货",
+        "总部国际业务部实习",
+        "整理境内外期货数据，制作 QFI 中英文业务材料，撰写境外机构与产业客户研究简报。",
+        "citic-futures",
+        "2025.09 – 2026.04"
+      ],
+      [
+        "鼎盛家族办公室",
+        "市场研究实习",
+        "整理全球市场数据，用 Excel 自动化日常流程，撰写 60 余份每日市场简报；用 Wind Excel API 搭建 Global Market Tracker，被团队采用。",
+        null,
+        "2024.05 – 2024.11"
       ],
       [
         "广发证券",
         "私募基金产品销售部实习",
         "学习基金产品与销售流程，整理 ETF 周报学习反馈及金融术语。",
-        null
+        null,
+        "2024.07 – 2024.09"
       ]
     ],
     "demo": [
@@ -232,7 +242,20 @@
       "zoomNative": "原图",
       "zoomDouble": "放大 2 倍",
       "related": "其他作品",
-      "langCode": "中"
+      "langCode": "中",
+      "projects": "其他项目",
+      "profileTitle": "背景与能力",
+      "education": "教育背景",
+      "tools": "工具",
+      "credentials": "证书与进行中",
+      "languages": "语言",
+      "beyond": "工作之外",
+      "contactNav": "联系",
+      "contactTitle": "聊聊机会",
+      "contactText": "欢迎通过 LinkedIn 联系我，讨论机构销售、商品研究或中马跨境业务方面的机会。",
+      "contactButton": "在 LinkedIn 联系我",
+      "focusLabel": "方向",
+      "tickerLabel": "研究覆盖的品种与市场"
     },
     "highlights": {
       "ferrous": {
@@ -295,6 +318,100 @@
         ],
         "note": "覆盖范围节选自案例正文，其余各项未在本站列出。"
       }
+    },
+    "profile": {
+      "focus": [
+        "机构与衍生品销售",
+        "商品研究",
+        "跨境金融"
+      ],
+      "stats": [
+        [
+          "4 段",
+          "金融与跨境实习"
+        ],
+        [
+          "60+",
+          "份每日市场简报"
+        ],
+        [
+          "2 × 14 页",
+          "QFI 中英文业务材料"
+        ],
+        [
+          "12 项",
+          "会员运营 SOP"
+        ]
+      ],
+      "tickers": [
+        "FCPO",
+        "POGO",
+        "RB · HC",
+        "I · J · JM",
+        "QFI",
+        "CSI 300",
+        "Cu"
+      ],
+      "projects": [
+        [
+          "沪深 300 多因子价值策略",
+          "量化回测 · 2024",
+          "用 7 个因子构建季度调仓组合，回测区间 2019-01-02 至 2023-12-29：累计收益 147.59%，年化 19.81%，最大回撤 43.12%，夏普比率 0.747。",
+          "历史回测，不代表未来表现。"
+        ],
+        [
+          "铜采购套期保值方案",
+          "机构业务训练项目 01 · 2026.10",
+          "为一家需在 3 个月后采购 100 吨铜的企业设计方案：现价 8 万元/吨，成本上限 8.8 万元/吨，套保预算 60 万元。方案建议以看涨期权全额覆盖采购量。",
+          "模拟练习。"
+        ]
+      ],
+      "education": [
+        [
+          "马来亚大学",
+          "市场营销硕士 · 全日制",
+          "2026 – 2027（预计）"
+        ],
+        [
+          "深圳北理莫斯科大学",
+          "经济学学士",
+          "2022 – 2026"
+        ]
+      ],
+      "tools": [
+        "Wind（Excel 插件 · EDB）",
+        "Bloomberg",
+        "S&P Capital IQ",
+        "Excel / VBA",
+        "PowerPoint"
+      ],
+      "credentials": [
+        "Bloomberg Finance Fundamentals（已完成）",
+        "CFA 一级备考中（2027 年 5 月）"
+      ],
+      "languages": [
+        [
+          "中文",
+          "母语"
+        ],
+        [
+          "English",
+          "工作语言"
+        ],
+        [
+          "Русский",
+          "中级（B1）"
+        ],
+        [
+          "Bahasa Melayu",
+          "学习中"
+        ]
+      ],
+      "beyond": [
+        "国家二级运动员（网球）",
+        "2022 黑龙江省高山滑雪速降冠军",
+        "2022 黑龙江网球公开赛第四名"
+      ]
     }
   },
   {
@@ -473,22 +590,32 @@
     ],
     "jobs": [
       [
-        "CITIC Futures",
-        "Head Office · International Business Intern",
-        "Compiled futures market data, built bilingual QFI decks and wrote briefs on overseas institutions and industrial clients.",
-        "citic-futures"
-      ],
-      [
         "TusStar Malaysia",
         "Admin & Operations Intern",
         "Developed the Eco Membership 2.0 proposal and SOPs, built the member management site and supported industry matchmaking events.",
-        "tusstar-membership"
+        "tusstar-membership",
+        "2026 – present"
+      ],
+      [
+        "CITIC Futures",
+        "Head Office · International Business Intern",
+        "Compiled futures market data, built bilingual QFI decks and wrote briefs on overseas institutions and industrial clients.",
+        "citic-futures",
+        "Sep 2025 – Apr 2026"
+      ],
+      [
+        "Dingsheng Family Office",
+        "Market Research Intern",
+        "Compiled global market data, automated routine work in Excel and wrote 60+ daily market briefings. Built a Global Market Tracker on the Wind Excel API that the team adopted.",
+        null,
+        "May – Nov 2024"
       ],
       [
         "GF Securities",
         "Private Fund Product Sales Intern",
         "Studied fund products and the sales process and prepared notes on ETF reports and financial terminology.",
-        null
+        null,
+        "Jul – Sep 2024"
       ]
     ],
     "demo": [
@@ -530,7 +657,20 @@
       "zoomNative": "Original size",
       "zoomDouble": "Zoom 2×",
       "related": "More work",
-      "langCode": "EN"
+      "langCode": "EN",
+      "projects": "Other projects",
+      "profileTitle": "Background & toolkit",
+      "education": "Education",
+      "tools": "Tools",
+      "credentials": "Credentials",
+      "languages": "Languages",
+      "beyond": "Beyond work",
+      "contactNav": "Contact",
+      "contactTitle": "Let’s talk",
+      "contactText": "Reach me on LinkedIn about institutional sales, commodity research or China–Malaysia cross-border roles.",
+      "contactButton": "Message me on LinkedIn",
+      "focusLabel": "Focus",
+      "tickerLabel": "Markets covered in my work"
     },
     "highlights": {
       "ferrous": {
@@ -593,6 +733,100 @@
         ],
         "note": "Coverage areas as listed in the case study; individual procedures are not all listed here."
       }
+    },
+    "profile": {
+      "focus": [
+        "Institutional & derivatives sales",
+        "Commodity research",
+        "Cross-border finance"
+      ],
+      "stats": [
+        [
+          "4",
+          "finance and cross-border internships"
+        ],
+        [
+          "60+",
+          "daily market briefings"
+        ],
+        [
+          "2 × 14",
+          "slides of bilingual QFI decks"
+        ],
+        [
+          "12",
+          "membership operations SOPs"
+        ]
+      ],
+      "tickers": [
+        "FCPO",
+        "POGO",
+        "RB · HC",
+        "I · J · JM",
+        "QFI",
+        "CSI 300",
+        "Cu"
+      ],
+      "projects": [
+        [
+          "CSI 300 multi-factor value strategy",
+          "Quant backtest · 2024",
+          "A seven-factor portfolio rebalanced quarterly, backtested from 2 Jan 2019 to 29 Dec 2023: cumulative return 147.59%, annualised 19.81%, maximum drawdown 43.12%, Sharpe ratio 0.747.",
+          "Historical backtest; not indicative of future returns."
+        ],
+        [
+          "Copper procurement hedge",
+          "Institutional sales practice project 01 · Oct 2026",
+          "A hedge for a buyer needing 100 tonnes of copper in three months, with spot at RMB 80,000/t, a cost cap of RMB 88,000/t and a RMB 600,000 hedging budget. The proposal covers the full volume with call options.",
+          "Simulation exercise."
+        ]
+      ],
+      "education": [
+        [
+          "Universiti Malaya",
+          "Master of Marketing · full-time",
+          "2026 – 2027 (expected)"
+        ],
+        [
+          "Shenzhen MSU-BIT University",
+          "BA Economics",
+          "2022 – 2026"
+        ]
+      ],
+      "tools": [
+        "Wind (Excel add-in · EDB)",
+        "Bloomberg",
+        "S&P Capital IQ",
+        "Excel / VBA",
+        "PowerPoint"
+      ],
+      "credentials": [
+        "Bloomberg Finance Fundamentals (completed)",
+        "Preparing for CFA Level I (May 2027)"
+      ],
+      "languages": [
+        [
+          "中文",
+          "native"
+        ],
+        [
+          "English",
+          "working language"
+        ],
+        [
+          "Русский",
+          "intermediate (B1)"
+        ],
+        [
+          "Bahasa Melayu",
+          "learning"
+        ]
+      ],
+      "beyond": [
+        "China National Level II Athlete (tennis)",
+        "2022 Heilongjiang alpine skiing downhill champion",
+        "4th, 2022 Heilongjiang Tennis Open"
+      ]
     }
   },
   {
@@ -771,22 +1005,32 @@
     ],
     "jobs": [
       [
-        "CITIC Futures",
-        "Pelatih Perniagaan Antarabangsa · Ibu Pejabat",
-        "Menyusun data niaga hadapan, menyediakan bahan QFI dwibahasa dan menulis ringkasan kajian institusi asing serta pelanggan industri.",
-        "citic-futures"
-      ],
-      [
         "TusStar Malaysia",
         "Pelatih Pentadbiran dan Operasi",
         "Menyediakan cadangan dan SOP keahlian, membina laman pengurusan dan menyokong program padanan industri.",
-        "tusstar-membership"
+        "tusstar-membership",
+        "2026 – kini"
+      ],
+      [
+        "CITIC Futures",
+        "Pelatih Perniagaan Antarabangsa · Ibu Pejabat",
+        "Menyusun data niaga hadapan, menyediakan bahan QFI dwibahasa dan menulis ringkasan kajian institusi asing serta pelanggan industri.",
+        "citic-futures",
+        "Sep 2025 – Apr 2026"
+      ],
+      [
+        "Dingsheng Family Office",
+        "Pelatih Penyelidikan Pasaran",
+        "Menyusun data pasaran global, mengautomasikan kerja rutin dalam Excel dan menulis lebih 60 taklimat pasaran harian. Membina Global Market Tracker menggunakan Wind Excel API yang diguna pakai oleh pasukan.",
+        null,
+        "Mei – Nov 2024"
       ],
       [
         "GF Securities",
         "Pelatih Jualan Produk Dana Persendirian",
         "Mempelajari produk dana dan proses jualan serta menyediakan nota laporan ETF dan istilah kewangan.",
-        null
+        null,
+        "Jul – Sep 2024"
       ]
     ],
     "demo": [
@@ -828,7 +1072,20 @@
       "zoomNative": "Saiz asal",
       "zoomDouble": "Zum 2×",
       "related": "Hasil kerja lain",
-      "langCode": "MS"
+      "langCode": "MS",
+      "projects": "Projek lain",
+      "profileTitle": "Latar belakang dan kemahiran",
+      "education": "Pendidikan",
+      "tools": "Alat",
+      "credentials": "Kelayakan",
+      "languages": "Bahasa",
+      "beyond": "Di luar kerja",
+      "contactNav": "Hubungi",
+      "contactTitle": "Mari berbincang",
+      "contactText": "Hubungi saya melalui LinkedIn untuk peluang dalam jualan institusi, penyelidikan komoditi atau perniagaan rentas sempadan China–Malaysia.",
+      "contactButton": "Hubungi saya di LinkedIn",
+      "focusLabel": "Fokus",
+      "tickerLabel": "Pasaran yang diliputi dalam kerja saya"
     },
     "highlights": {
       "ferrous": {
@@ -891,6 +1148,100 @@
         ],
         "note": "Bidang liputan seperti dalam kajian kes; tidak semua prosedur disenaraikan di sini."
       }
+    },
+    "profile": {
+      "focus": [
+        "Jualan institusi dan derivatif",
+        "Penyelidikan komoditi",
+        "Kewangan rentas sempadan"
+      ],
+      "stats": [
+        [
+          "4",
+          "latihan industri kewangan dan rentas sempadan"
+        ],
+        [
+          "60+",
+          "taklimat pasaran harian"
+        ],
+        [
+          "2 × 14",
+          "slaid bahan QFI dwibahasa"
+        ],
+        [
+          "12",
+          "SOP operasi keahlian"
+        ]
+      ],
+      "tickers": [
+        "FCPO",
+        "POGO",
+        "RB · HC",
+        "I · J · JM",
+        "QFI",
+        "CSI 300",
+        "Cu"
+      ],
+      "projects": [
+        [
+          "Strategi nilai pelbagai faktor CSI 300",
+          "Ujian balik kuantitatif · 2024",
+          "Portfolio tujuh faktor dengan pengimbangan semula suku tahunan, diuji dari 2 Jan 2019 hingga 29 Dis 2023: pulangan kumulatif 147.59%, tahunan 19.81%, susutan maksimum 43.12%, nisbah Sharpe 0.747.",
+          "Ujian balik sejarah; bukan petunjuk pulangan masa depan."
+        ],
+        [
+          "Lindung nilai perolehan tembaga",
+          "Projek latihan jualan institusi 01 · Okt 2026",
+          "Pelan lindung nilai untuk pembeli yang memerlukan 100 tan tembaga dalam tiga bulan, dengan harga semasa RMB 80,000/tan, had kos RMB 88,000/tan dan bajet lindung nilai RMB 600,000. Cadangan ini melindungi keseluruhan jumlah dengan opsyen beli.",
+          "Latihan simulasi."
+        ]
+      ],
+      "education": [
+        [
+          "Universiti Malaya",
+          "Sarjana Pemasaran · sepenuh masa",
+          "2026 – 2027 (jangkaan)"
+        ],
+        [
+          "Shenzhen MSU-BIT University",
+          "Sarjana Muda Ekonomi",
+          "2022 – 2026"
+        ]
+      ],
+      "tools": [
+        "Wind (tambahan Excel · EDB)",
+        "Bloomberg",
+        "S&P Capital IQ",
+        "Excel / VBA",
+        "PowerPoint"
+      ],
+      "credentials": [
+        "Bloomberg Finance Fundamentals (selesai)",
+        "Membuat persediaan CFA Tahap I (Mei 2027)"
+      ],
+      "languages": [
+        [
+          "中文",
+          "bahasa ibunda"
+        ],
+        [
+          "English",
+          "bahasa kerja"
+        ],
+        [
+          "Русский",
+          "pertengahan (B1)"
+        ],
+        [
+          "Bahasa Melayu",
+          "sedang belajar"
+        ]
+      ],
+      "beyond": [
+        "Atlet Kebangsaan Tahap II China (tenis)",
+        "Juara lumba turun bukit ski alpine Heilongjiang 2022",
+        "Tempat ke-4, Terbuka Tenis Heilongjiang 2022"
+      ]
     }
   }
 ]
