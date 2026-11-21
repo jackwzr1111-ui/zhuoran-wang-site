@@ -10,6 +10,7 @@ from xml.sax.saxutils import escape as xml_escape
 ROOT = Path(__file__).resolve().parent
 DIST = ROOT / 'dist'
 LINKEDIN = 'https://www.linkedin.com/in/zhuoran-wang-151437325/'
+EMAIL = '26067577@siswa.um.edu.my'
 LAB = 'https://zhuoran-frontdesk-lab.jackandwzr.chatgpt.site'
 # Google Search Console ownership token for the GitHub Pages property. Keep it, or verification is lost.
 GOOGLE_SITE_VERIFICATION = '85ujjiV8bpENyZ2mHrsleQaIXhjzl0w-IllRL5oOpG0'
@@ -90,6 +91,7 @@ def structured_data(site, lang, canonical, headline, description, case):
         'alternateName': NAME_EN if lang['lang'] == 'zh-CN' else NAME_ZH,
         'url': home,
         'sameAs': [LINKEDIN],
+        'email': f'mailto:{EMAIL}',
     }
     entry = {'url': canonical, 'inLanguage': lang['lang'], 'description': description}
     if case:
@@ -202,7 +204,10 @@ def contact_band(lang, anchor=True):
       <h2 id="contact-title{'' if anchor else '-case'}">{h(ui['contactTitle'])}</h2>
       <p>{h(ui['contactText'])}</p>
     </div>
-    <a class="button-light" href="{LINKEDIN}">{h(ui['contactButton'])} ↗</a>
+    <div class="contact-actions">
+      <a class="button-light" href="{LINKEDIN}">{h(ui['contactButton'])} ↗</a>
+      <a class="contact-email" href="mailto:{EMAIL}"><span>{h(ui['emailLabel'])}</span>{EMAIL}</a>
+    </div>
   </div>
 </section>"""
 

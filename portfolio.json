@@ -252,10 +252,12 @@
       "beyond": "工作之外",
       "contactNav": "联系",
       "contactTitle": "聊聊机会",
-      "contactText": "欢迎通过 LinkedIn 联系我，讨论机构销售、商品研究或中马跨境业务方面的机会。",
+      "contactText": "欢迎通过 LinkedIn 或邮件联系我，讨论机构销售、商品研究或中马跨境业务方面的机会。",
       "contactButton": "在 LinkedIn 联系我",
       "focusLabel": "方向",
-      "tickerLabel": "研究覆盖的品种与市场"
+      "tickerLabel": "研究覆盖的品种与市场",
+      "emailLabel": "邮箱",
+      "emailButton": "发邮件给我"
     },
     "highlights": {
       "ferrous": {
@@ -387,7 +389,7 @@
       ],
       "credentials": [
         "Bloomberg Finance Fundamentals（已完成）",
-        "CFA 一级备考中（2027 年 5 月）"
+        "计划报考 CFA 一级（目标 2027 年 5 月）"
       ],
       "languages": [
         [
@@ -667,10 +669,12 @@
       "beyond": "Beyond work",
       "contactNav": "Contact",
       "contactTitle": "Let’s talk",
-      "contactText": "Reach me on LinkedIn about institutional sales, commodity research or China–Malaysia cross-border roles.",
+      "contactText": "Reach me on LinkedIn or by email about institutional sales, commodity research or China–Malaysia cross-border roles.",
       "contactButton": "Message me on LinkedIn",
       "focusLabel": "Focus",
-      "tickerLabel": "Markets covered in my work"
+      "tickerLabel": "Markets covered in my work",
+      "emailLabel": "Email",
+      "emailButton": "Email me"
     },
     "highlights": {
       "ferrous": {
@@ -802,7 +806,7 @@
       ],
       "credentials": [
         "Bloomberg Finance Fundamentals (completed)",
-        "Preparing for CFA Level I (May 2027)"
+        "Planning to sit CFA Level I (target: May 2027)"
       ],
       "languages": [
         [
@@ -1082,10 +1086,12 @@
       "beyond": "Di luar kerja",
       "contactNav": "Hubungi",
       "contactTitle": "Mari berbincang",
-      "contactText": "Hubungi saya melalui LinkedIn untuk peluang dalam jualan institusi, penyelidikan komoditi atau perniagaan rentas sempadan China–Malaysia.",
+      "contactText": "Hubungi saya melalui LinkedIn atau e-mel untuk peluang dalam jualan institusi, penyelidikan komoditi atau perniagaan rentas sempadan China–Malaysia.",
       "contactButton": "Hubungi saya di LinkedIn",
       "focusLabel": "Fokus",
-      "tickerLabel": "Pasaran yang diliputi dalam kerja saya"
+      "tickerLabel": "Pasaran yang diliputi dalam kerja saya",
+      "emailLabel": "E-mel",
+      "emailButton": "Hantar e-mel"
     },
     "highlights": {
       "ferrous": {
@@ -1217,7 +1223,7 @@
       ],
       "credentials": [
         "Bloomberg Finance Fundamentals (selesai)",
-        "Membuat persediaan CFA Tahap I (Mei 2027)"
+        "Merancang menduduki CFA Tahap I (sasaran: Mei 2027)"
       ],
       "languages": [
         [

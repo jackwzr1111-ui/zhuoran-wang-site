@@ -213,6 +213,10 @@ html[lang="zh-CN"] .edu strong { font-size: 1.15rem; font-weight: 600; font-fami
 .contact-band .eyebrow { color: var(--on-night-muted); }
 .contact-band h2 { font: 400 clamp(2.3rem, 5vw, 3.8rem)/1.05 var(--serif); margin: .4rem 0 .7rem; }
 .contact-band p:not(.eyebrow) { color: var(--on-night-muted); max-width: 52ch; }
+.contact-actions { display: flex; flex-direction: column; align-items: flex-start; gap: .9rem; }
+.contact-email { display: grid; gap: .1rem; color: var(--on-night); text-decoration: none; font-size: .95rem; border-bottom: 1px solid var(--on-night-line); padding-bottom: .2rem; }
+.contact-email span { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--on-night-muted); font-weight: 650; }
+.contact-email:hover { color: var(--mint); border-color: var(--mint); }
 
 /* Footer */
 .footer { background: var(--night); color: var(--on-night-muted); border-top: 1px solid var(--on-night-line); font-size: .86rem; }
