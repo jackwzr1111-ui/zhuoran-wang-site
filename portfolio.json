@@ -1,0 +1,896 @@
+[
+  {
+    "lang": "zh-CN",
+    "file": "index.html",
+    "name": "汪卓燃",
+    "location": "马来西亚 · 吉隆坡",
+    "degree": "马来亚大学 · 市场营销硕士在读",
+    "title": "商品研究与跨境业务",
+    "intro": "我跟踪商品期货的供需、价差与期限结构。在中信期货国际业务部，我把市场数据做成双语业务材料。在启迪之星（马来西亚），我把会员服务方案落成管理系统和可交接的 SOP。",
+    "read": "阅读案例",
+    "work": "精选作品",
+    "exp": "工作经历",
+    "home": "返回作品集",
+    "evidence": "研究与交付",
+    "practice": "机构业务训练室",
+    "note": "图表与数据为研究时点记录。",
+    "research": "独立研究",
+    "intern": "实习项目",
+    "labels": [
+      "库存可用月数与 FCPO 月度结算价",
+      "马来西亚期末库存季节性",
+      "POGO 价差与布伦特原油",
+      "中国进口盈亏、进口量及商业库存"
+    ],
+    "source": "作者原报告图表，底表为 Commodity Spread Tracker（Wind EDB / MPOB / USDA）。",
+    "cases": [
+      [
+        "palm-oil",
+        "农产品研究",
+        "库存创十年新高，棕榈油为什么不跌？",
+        "同一张图上，马来西亚库存与 FCPO 价格都处在高位。我用库存可用月数、能源价差和中国进口盈亏解释这种背离。",
+        "MPOB 数据截至 2026 年 10 月",
+        [
+          [
+            "先把库存放回季节性里",
+            "我从报告配套工作簿的月度供需表提取数据，以期末库存除以出口与国内消费之和，比较不同年份的库存压力。2026 年 9 月需求回落，库存可用月数升至 2.37。10 月需求修复后，该指标降至 1.75，库存绝对量仍升至约 362 万吨。"
+          ],
+          [
+            "把价格背离拆成两个市场",
+            "10 月 FCPO 月度结算价为 4,681 令吉/吨。报告用棕榈油 FOB 与柴油的 POGO 价差检验生物柴油需求的支撑，并用中国 24 度棕榈油进口盈亏及豆棕、菜棕价差交叉检查食用需求。报告记录的 9 月进口盈亏为 −951 元/吨。"
+          ],
+          [
+            "写成可跟踪的情景",
+            "报告提出的解释是，柴油价格上升改善了生物柴油掺混经济性，部分抵消高库存压力。后续观察布伦特与 POGO 是否同步转向，同时核对 MPOB 库存、出口和中国到港量。不同序列各用自己的最近可用月份。"
+          ],
+          [
+            "把研究过程做成可更新的工作簿",
+            "在 Commodity Spread Tracker 中，把 Wind 实时取数、日度数值快照和月度供需表分开。日度页计算 POGO、豆棕价差和不同到货地的测算进口利润。期限结构页比较最近交易日、一周前与一月前的 FCPO 曲线。"
+          ]
+        ],
+        [
+          [
+            "362 万吨",
+            "马来西亚 10 月期末库存"
+          ],
+          [
+            "1.75 个月",
+            "10 月库存可用月数"
+          ],
+          [
+            "RM 4,681/吨",
+            "10 月 FCPO 月度结算价"
+          ]
+        ]
+      ],
+      [
+        "ferrous",
+        "黑色系研究",
+        "把五个品种放进一条钢厂利润链",
+        "从螺纹、热卷的成材价格出发，用盘面利润连接钢厂开工、铁水产量和对铁矿、焦炭、焦煤的需求。",
+        "研究框架与 Excel 工作簿 · v3",
+        [
+          [
+            "搭建指标体系",
+            "以月度产量、进出口和重点钢企库存看趋势与季节性，以日度期货、现货和运费跟踪价差。研究框架另列澳巴发运及到港、247 家钢厂铁水和港口库存作为周度验证指标。"
+          ],
+          [
+            "把判断写进公式",
+            "工作簿跟踪卷螺差、螺矿比、盘面焦化利润、基差与期限结构。螺纹盘面利润用螺纹价格减去 1.6 倍铁矿价格、0.5 倍焦炭价格和其他成本，系数与成本在假设页集中维护。"
+          ],
+          [
+            "设计可更新的看板",
+            "用 Wind EDB 接入月度指标，日度行情存成数值快照。季节性和历史分位看板保留缺失值。比较大商所与新交所铁矿时，先统一汇率、干湿吨和价格口径。"
+          ]
+        ],
+        [
+          [
+            "RB · HC",
+            "成材价格与卷螺差"
+          ],
+          [
+            "I · J · JM",
+            "原料成本与跨品种价差"
+          ],
+          [
+            "月度 / 日度",
+            "供需季节性与期现结构"
+          ]
+        ]
+      ],
+      [
+        "citic-futures",
+        "机构业务",
+        "把国内期货市场数据做成双语业务材料",
+        "在中信期货总部国际业务部，整理境内期货与期权的成交、持仓和准入信息，为跨境市场介绍和机构研究准备交付材料。",
+        "中信期货 · 总部国际业务部",
+        [
+          [
+            "从原始统计到中英文图表",
+            "按交易所、品种和统计期整理成交量、成交额、持仓量，并对照 QFI 与国际化品种范围。为展示表统一中英文品种名、代码和单位，区分期间成交指标与时点持仓指标。"
+          ],
+          [
+            "制作两套 14 页 QFI 材料",
+            "中文和英文版覆盖市场概览、可参与品种、境内外对应合约、开户、交易和风控。将 Excel 统计及中英文口径转成汇报页，供团队介绍中国市场使用。"
+          ],
+          [
+            "撰写境外机构与产业客户简报",
+            "以 StoneX、Marex 等机构为例，梳理商业客户、机构服务、经纪及清算等业务线、全球布局与中国业务关联，供团队讨论潜在合作方向。"
+          ]
+        ],
+        [
+          [
+            "2 × 14 页",
+            "QFI 中英文业务介绍"
+          ],
+          [
+            "Excel → PPT",
+            "由统计底表到业务展示"
+          ],
+          [
+            "StoneX · Marex",
+            "境外机构研究样本"
+          ]
+        ]
+      ],
+      [
+        "tusstar-membership",
+        "运营与系统",
+        "从会员体系诊断到可以交接的运营流程",
+        "把历史会员资料、跨境服务方案、管理网页和 SOP 连在一起，让接手的同事能从登记一路跟进到续费和退出。",
+        "启迪之星（马来西亚） · 生态会员 2.0",
+        [
+          [
+            "先核对台账，再重做权益",
+            "检查历史报告、会员名单与权益表，把疑似重复、会员状态和缴费记录列为核对项。2.0 方案围绕中国企业落地马来西亚、马来西亚企业进入中国、生态伙伴三条线设计服务，对应资源对接、活动与软着陆服务。"
+          ],
+          [
+            "做成同事每天能用的网页",
+            "搭建生态会员管理系统，包含总览、会员台账、入会登记、对接需求、活动、权益速查和导入导出。台账关联会员状态、到期时间及最近互动，总览汇集待办和月度汇报数据。"
+          ],
+          [
+            "把角色、时限和产出写进 SOP",
+            "v1.0 共 12 项 SOP，覆盖线索、审核收款、开通、精准对接、活动、社群、续费和台账汇报等。以对接为例，从登记需求和候选匹配，到纪要存档及会后回访，都有对应状态和交付物。"
+          ],
+          [
+            "把活动纳入实际工作记录",
+            "参与成都—马来西亚科技创新与产业合作对接会，以及东盟国际服务贸易交易会暨中马智能产业博览会。围绕中马科创合作、智能制造与企业出海整理活动简讯和后续对接议题。"
+          ]
+        ],
+        [
+          [
+            "3 条服务线",
+            "赴马落地 · 进华 · 生态伙伴"
+          ],
+          [
+            "7 个页面",
+            "从总览与台账到数据导出"
+          ],
+          [
+            "12 项 SOP",
+            "v1.0 角色分工与交接流程"
+          ]
+        ]
+      ]
+    ],
+    "jobs": [
+      [
+        "中信期货",
+        "总部国际业务部实习",
+        "整理境内外期货数据，制作 QFI 中英文业务材料，撰写境外机构与产业客户研究简报。",
+        "citic-futures"
+      ],
+      [
+        "启迪之星（马来西亚）",
+        "行政与运营实习",
+        "梳理生态会员 2.0 方案和 SOP，搭建会员管理网页，参与中马科创与产业对接活动。",
+        "tusstar-membership"
+      ],
+      [
+        "广发证券",
+        "私募基金产品销售部实习",
+        "学习基金产品与销售流程，整理 ETF 周报学习反馈及金融术语。",
+        null
+      ]
+    ],
+    "demo": [
+      "会员台账 · 流程示意",
+      "登记需求",
+      "审核与开通",
+      "匹配资源",
+      "回访与续费",
+      "展示系统记录如何随流程更新。"
+    ],
+    "demoSteps": [
+      [
+        "待审核",
+        "登记来源、企业方向和具体需求，指定负责人。"
+      ],
+      [
+        "待付款 → 有效",
+        "在审核与到账确认后，记录起止日期和合同编号。"
+      ],
+      [
+        "对接跟进",
+        "关联会员与对接对象，记录会议纪要和下一次行动。"
+      ],
+      [
+        "待续费",
+        "在 60、30、7 天节点提醒，结合权益使用记录沟通续费。"
+      ]
+    ],
+    "ui": {
+      "skip": "跳到正文",
+      "mainNav": "主导航",
+      "langNav": "语言",
+      "lead": "代表研究",
+      "by": "作者",
+      "zoom": "查看大图",
+      "zoomOf": "查看大图：",
+      "close": "关闭",
+      "zoomFit": "适应屏幕",
+      "zoomNative": "原图",
+      "zoomDouble": "放大 2 倍",
+      "related": "其他作品",
+      "langCode": "中"
+    },
+    "highlights": {
+      "ferrous": {
+        "title": "螺纹盘面利润（估算）",
+        "terms": [
+          [
+            "RB",
+            "螺纹价格"
+          ],
+          [
+            "1.6 × I",
+            "铁矿"
+          ],
+          [
+            "0.5 × J",
+            "焦炭"
+          ],
+          [
+            "其他成本",
+            ""
+          ]
+        ],
+        "note": "系数与成本在工作簿假设页集中维护。结果是基于盘面价格和假设的估算，不代表单个钢厂的实际利润。"
+      },
+      "citic-futures": {
+        "title": "交付材料：两套 QFI 业务介绍",
+        "decks": [
+          [
+            "中文版",
+            "14 页"
+          ],
+          [
+            "英文版",
+            "14 页"
+          ]
+        ],
+        "items": [
+          "市场概览",
+          "可参与品种",
+          "境内外对应合约",
+          "开户",
+          "交易",
+          "风控"
+        ],
+        "note": "目录按案例正文整理。材料原件为内部使用，未在本站公开。"
+      },
+      "tusstar-membership": {
+        "title": "SOP v1.0",
+        "count": "12 项",
+        "countLabel": "标准作业流程",
+        "items": [
+          "线索",
+          "审核收款",
+          "开通",
+          "精准对接",
+          "活动",
+          "社群",
+          "续费",
+          "台账汇报"
+        ],
+        "note": "覆盖范围节选自案例正文，其余各项未在本站列出。"
+      }
+    }
+  },
+  {
+    "lang": "en",
+    "file": "en.html",
+    "name": "Zhuoran Wang",
+    "location": "Kuala Lumpur, Malaysia",
+    "degree": "Master of Marketing candidate · Universiti Malaya",
+    "title": "Commodity research & cross-border business",
+    "intro": "I study commodity balances, spreads and futures curves. At CITIC Futures I turned market data into bilingual business materials. At TusStar Malaysia I built a membership management site and wrote the procedures for handing it over.",
+    "read": "Read case study",
+    "work": "Selected work",
+    "exp": "Experience",
+    "home": "Back to portfolio",
+    "evidence": "Analysis and deliverables",
+    "practice": "Institutional business practice lab",
+    "note": "Charts and figures reflect the research period.",
+    "research": "Independent research",
+    "intern": "Internship project",
+    "labels": [
+      "Months of inventory and FCPO monthly settlement",
+      "Seasonality of Malaysian closing stocks",
+      "POGO spread and Brent crude",
+      "Chinese import margins, volumes and commercial stocks"
+    ],
+    "source": "Figures from the original report and its Commodity Spread Tracker workbook (Wind EDB / MPOB / USDA).",
+    "cases": [
+      [
+        "palm-oil",
+        "Agricultural commodities",
+        "Why didn’t palm oil fall as stocks hit a ten-year high?",
+        "Malaysian stocks and FCPO prices were both elevated. I used inventory coverage, energy spreads and Chinese import margins to investigate the divergence.",
+        "MPOB data through October 2026",
+        [
+          [
+            "Put the stock build in seasonal context",
+            "I used the monthly balance in the companion workbook and divided closing stocks by exports plus domestic use. As demand fell, coverage rose to 2.37 months in September. It eased to 1.75 in October as demand recovered, even as absolute stocks rose to about 3.62 million tonnes."
+          ],
+          [
+            "Separate fuel and food demand",
+            "October FCPO settled at MYR 4,681 per tonne in the monthly series. I used the POGO spread between palm oil FOB and diesel as a gauge of biodiesel blending economics. I checked food demand separately using Chinese import margins and price spreads to soybean and rapeseed oil. The report recorded a September import margin of −CNY 951 per tonne."
+          ],
+          [
+            "Turn the thesis into a monitoring plan",
+            "The report argued that higher diesel prices improved blending economics and offset part of the pressure from inventories. I tracked Brent and POGO alongside MPOB stocks, exports and arrivals in China, keeping the latest available month explicit for each series."
+          ],
+          [
+            "Build the research into an updating workbook",
+            "In Commodity Spread Tracker I separated live Wind inputs, daily snapshots stored as values and monthly balances. The daily sheet calculates POGO, soybean–palm spreads and estimated import margins by destination. The curve tab compares the most recent FCPO futures curve with those from one week and one month earlier."
+          ]
+        ],
+        [
+          [
+            "3.62m tonnes",
+            "October closing stocks in Malaysia"
+          ],
+          [
+            "1.75 months",
+            "October inventory coverage"
+          ],
+          [
+            "MYR 4,681/t",
+            "October FCPO monthly settlement"
+          ]
+        ]
+      ],
+      [
+        "ferrous",
+        "Ferrous commodities",
+        "Five contracts, one steel mill margin framework",
+        "I use estimated mill margins to connect rebar and hot-rolled coil prices with blast furnace output and demand for iron ore, coke and coking coal.",
+        "Research framework and Excel workbook · v3",
+        [
+          [
+            "Map indicators to the value chain",
+            "Monthly output, trade and steel mill inventories show longer trends. Daily futures, spot prices and freight inform spread analysis. The framework identifies Australian and Brazilian shipments, Chinese port arrivals, hot metal output and port stocks as weekly cross-checks."
+          ],
+          [
+            "Make assumptions explicit",
+            "The workbook tracks the HRC–rebar spread, rebar–iron ore ratio, coke margins, basis and futures curves. Its rebar margin proxy subtracts 1.6 times ore, 0.5 times coke and other costs from rebar futures, with editable factors on an assumptions sheet."
+          ],
+          [
+            "Design for updates",
+            "Wind EDB feeds the monthly inputs and daily prices can be archived as values. Seasonality and percentile charts preserve gaps. Comparing Dalian and Singapore iron ore requires aligning currency, dry and wet tonnes, and price basis."
+          ]
+        ],
+        [
+          [
+            "RB · HC",
+            "Finished steel and HRC–rebar spread"
+          ],
+          [
+            "I · J · JM",
+            "Raw materials and relative value"
+          ],
+          [
+            "Monthly / daily",
+            "Seasonal balances and futures structure"
+          ]
+        ]
+      ],
+      [
+        "citic-futures",
+        "Institutional business",
+        "Turning China futures data into bilingual business materials",
+        "At CITIC Futures’ head office, I prepared market statistics, access materials and institutional research for the international business team.",
+        "CITIC Futures · International Business",
+        [
+          [
+            "From exchange data to bilingual exhibits",
+            "I organised volume, turnover and open interest by exchange, product and reporting period. I checked QFI and internationalised product coverage, aligned names, tickers and units, and distinguished period trading activity from a point-in-time open interest measure."
+          ],
+          [
+            "Build two 14-slide QFI decks",
+            "The Chinese and English versions covered the market, product access, comparable offshore contracts, account opening, execution and risk controls. I turned Excel tables into presentation exhibits for the team’s China market briefings."
+          ],
+          [
+            "Research global institutions and industrial clients",
+            "I prepared briefs on firms including StoneX and Marex, mapping business lines such as brokerage and clearing, geographic coverage and links to China to inform internal discussions on potential collaboration."
+          ]
+        ],
+        [
+          [
+            "2 × 14 slides",
+            "QFI decks in Chinese and English"
+          ],
+          [
+            "Excel → PPT",
+            "Market statistics to presentation exhibits"
+          ],
+          [
+            "StoneX · Marex",
+            "Examples of institutional research"
+          ]
+        ]
+      ],
+      [
+        "tusstar-membership",
+        "Operations & systems",
+        "From a membership review to a documented operating workflow",
+        "I brought together historical records, a cross-border service proposal, a management site and operating procedures covering intake through renewal and exit.",
+        "TusStar Malaysia · Eco Membership 2.0",
+        [
+          [
+            "Reconcile the records before redesigning benefits",
+            "I reviewed historical reports, member lists and benefits, flagging possible duplicates, membership status and payment records for checks. The proposal defined three tracks for entering Malaysia, entering China and ecosystem partners, with matching, events and soft-landing services."
+          ],
+          [
+            "Build the management site",
+            "The site groups the overview, member register, intake, matching requests, events, benefits and import/export. The register tracks status, expiry and recent contact, while the dashboard assembles follow-ups and monthly reporting figures."
+          ],
+          [
+            "Define roles, deadlines and handoffs",
+            "Version 1.0 contains 12 SOPs, covering intake, review and payment, onboarding, matching, events, community operations, renewal and reporting. A matching request runs from initial recording and shortlisting to meeting notes and follow-up."
+          ],
+          [
+            "Support China–Malaysia industry events",
+            "I joined the Chengdu–Malaysia science and technology matchmaking meeting and AIFTIS & CMIIE 2026. I prepared event briefs and recorded follow-up topics around innovation, smart manufacturing and entering overseas markets."
+          ]
+        ],
+        [
+          [
+            "3 tracks",
+            "Go Malaysia · Go China · Eco Partners"
+          ],
+          [
+            "7 views",
+            "Dashboard and register through data export"
+          ],
+          [
+            "12 SOPs",
+            "Roles and handoffs documented in v1.0"
+          ]
+        ]
+      ]
+    ],
+    "jobs": [
+      [
+        "CITIC Futures",
+        "Head Office · International Business Intern",
+        "Compiled futures market data, built bilingual QFI decks and wrote briefs on overseas institutions and industrial clients.",
+        "citic-futures"
+      ],
+      [
+        "TusStar Malaysia",
+        "Admin & Operations Intern",
+        "Developed the Eco Membership 2.0 proposal and SOPs, built the member management site and supported industry matchmaking events.",
+        "tusstar-membership"
+      ],
+      [
+        "GF Securities",
+        "Private Fund Product Sales Intern",
+        "Studied fund products and the sales process and prepared notes on ETF reports and financial terminology.",
+        null
+      ]
+    ],
+    "demo": [
+      "Member register · Workflow illustration",
+      "Intake",
+      "Review & onboarding",
+      "Matching",
+      "Follow-up & renewal",
+      "How a member record changes as work moves forward."
+    ],
+    "demoSteps": [
+      [
+        "Under review",
+        "Record the lead source, market direction and business need. Assign an owner."
+      ],
+      [
+        "Awaiting payment → Active",
+        "After review and payment confirmation, record dates and the contract reference."
+      ],
+      [
+        "Matching in progress",
+        "Link the member to the proposed partner and record meeting notes and the next action."
+      ],
+      [
+        "Renewal due",
+        "Check in 60, 30 and 7 days before expiry, using the record of benefits delivered."
+      ]
+    ],
+    "ui": {
+      "skip": "Skip to content",
+      "mainNav": "Main",
+      "langNav": "Language",
+      "lead": "Lead research",
+      "by": "By",
+      "zoom": "View full size",
+      "zoomOf": "View full size: ",
+      "close": "Close",
+      "zoomFit": "Fit to screen",
+      "zoomNative": "Original size",
+      "zoomDouble": "Zoom 2×",
+      "related": "More work",
+      "langCode": "EN"
+    },
+    "highlights": {
+      "ferrous": {
+        "title": "Rebar margin proxy",
+        "terms": [
+          [
+            "RB",
+            "rebar futures"
+          ],
+          [
+            "1.6 × I",
+            "iron ore"
+          ],
+          [
+            "0.5 × J",
+            "coke"
+          ],
+          [
+            "other costs",
+            ""
+          ]
+        ],
+        "note": "Factors and costs are kept on the workbook’s assumptions sheet. The result is an estimate from futures prices and assumptions, not any individual mill’s actual margin."
+      },
+      "citic-futures": {
+        "title": "Deliverable: two QFI decks",
+        "decks": [
+          [
+            "Chinese edition",
+            "14 slides"
+          ],
+          [
+            "English edition",
+            "14 slides"
+          ]
+        ],
+        "items": [
+          "Market overview",
+          "Product access",
+          "Comparable offshore contracts",
+          "Account opening",
+          "Execution",
+          "Risk controls"
+        ],
+        "note": "Contents as described in the case study. The decks were for internal use and are not published here."
+      },
+      "tusstar-membership": {
+        "title": "SOP v1.0",
+        "count": "12",
+        "countLabel": "standard operating procedures",
+        "items": [
+          "Intake",
+          "Review & payment",
+          "Onboarding",
+          "Matching",
+          "Events",
+          "Community",
+          "Renewal",
+          "Reporting"
+        ],
+        "note": "Coverage areas as listed in the case study; individual procedures are not all listed here."
+      }
+    }
+  },
+  {
+    "lang": "ms",
+    "file": "ms.html",
+    "name": "Zhuoran Wang",
+    "location": "Kuala Lumpur, Malaysia",
+    "degree": "Calon Sarjana Pemasaran · Universiti Malaya",
+    "title": "Penyelidikan komoditi dan perniagaan rentas sempadan",
+    "intro": "Saya meneliti imbangan bekalan dan permintaan, spread dan keluk niaga hadapan komoditi. Di CITIC Futures, saya menyediakan bahan perniagaan dwibahasa. Di TusStar Malaysia, saya membina laman pengurusan keahlian dan menulis SOP serah tugas.",
+    "read": "Baca kajian kes",
+    "work": "Projek pilihan",
+    "exp": "Pengalaman kerja",
+    "home": "Kembali ke portfolio",
+    "evidence": "Analisis dan hasil kerja",
+    "practice": "Laman latihan perniagaan institusi",
+    "note": "Carta dan angka merujuk kepada tempoh kajian.",
+    "research": "Kajian bebas",
+    "intern": "Projek latihan industri",
+    "labels": [
+      "Bulan liputan stok dan penyelesaian bulanan FCPO",
+      "Corak bermusim stok akhir Malaysia",
+      "Spread POGO dan minyak mentah Brent",
+      "Margin import, jumlah import dan stok komersial China"
+    ],
+    "source": "Carta daripada laporan asal dan buku kerja Commodity Spread Tracker (Wind EDB / MPOB / USDA).",
+    "cases": [
+      [
+        "palm-oil",
+        "Komoditi pertanian",
+        "Mengapa harga minyak sawit bertahan apabila stok mencecah paras tertinggi dalam sepuluh tahun?",
+        "Stok Malaysia dan harga FCPO sama-sama tinggi. Saya meneliti liputan stok, spread tenaga dan margin import China untuk memahami perbezaan ini.",
+        "Data MPOB hingga Oktober 2026",
+        [
+          [
+            "Bandingkan stok mengikut musim",
+            "Saya membahagikan stok akhir dengan jumlah eksport dan penggunaan domestik berdasarkan imbangan bulanan. Liputan stok meningkat kepada 2.37 bulan pada September apabila permintaan merosot. Pada Oktober, liputan turun kepada 1.75 bulan apabila permintaan pulih, walaupun stok mencapai kira-kira 3.62 juta tan."
+          ],
+          [
+            "Bezakan permintaan bahan api dan makanan",
+            "Harga penyelesaian bulanan FCPO pada Oktober ialah MYR 4,681 setan. Saya menggunakan spread POGO antara harga FOB minyak sawit dan diesel untuk menilai ekonomi campuran biodiesel. Margin import China dan spread berbanding minyak soya serta minyak biji sesawi digunakan untuk menyemak permintaan makanan. Margin import September dalam laporan ialah −CNY 951 setan."
+          ],
+          [
+            "Tentukan petunjuk susulan",
+            "Laporan itu mengemukakan bahawa harga diesel yang lebih tinggi memperbaik ekonomi campuran biodiesel dan mengimbangi sebahagian tekanan stok. Saya menjejaki Brent dan POGO bersama stok MPOB, eksport dan ketibaan di China, dengan tarikh rujukan masing-masing."
+          ],
+          [
+            "Bina buku kerja yang boleh dikemas kini",
+            "Dalam Commodity Spread Tracker, saya mengasingkan data langsung Wind, rekod harian sebagai nilai dan imbangan bulanan. Helaian harian mengira POGO, spread soya–sawit dan anggaran margin import mengikut destinasi. Helaian keluk membandingkan keluk FCPO terkini dengan keluk seminggu dan sebulan sebelumnya."
+          ]
+        ],
+        [
+          [
+            "3.62 juta tan",
+            "Stok akhir Malaysia pada Oktober"
+          ],
+          [
+            "1.75 bulan",
+            "Liputan stok pada Oktober"
+          ],
+          [
+            "MYR 4,681/tan",
+            "Harga penyelesaian bulanan FCPO pada Oktober"
+          ]
+        ]
+      ],
+      [
+        "ferrous",
+        "Komoditi ferus",
+        "Lima kontrak dalam satu rangka kerja margin kilang keluli",
+        "Saya menggunakan anggaran margin kilang untuk menghubungkan harga keluli tetulang dan gegelung gulung panas dengan pengeluaran relau serta permintaan bijih besi, kok dan arang kok.",
+        "Rangka kerja penyelidikan dan buku kerja Excel · v3",
+        [
+          [
+            "Padankan petunjuk dengan rantaian bekalan",
+            "Pengeluaran, perdagangan dan stok kilang bulanan menunjukkan trend jangka panjang. Data niaga hadapan, harga semerta dan tambang harian membantu analisis spread. Penghantaran Australia dan Brazil, ketibaan di pelabuhan China, pengeluaran besi cair dan stok pelabuhan ialah semakan mingguan."
+          ],
+          [
+            "Nyatakan andaian dengan jelas",
+            "Buku kerja menjejak spread gegelung–tetulang, nisbah tetulang–bijih besi, margin kok, asas harga dan keluk niaga hadapan. Anggaran margin tetulang menolak 1.6 kali harga bijih besi, 0.5 kali harga kok dan kos lain daripada harga niaga hadapan tetulang. Pekali boleh dilaras pada helaian andaian."
+          ],
+          [
+            "Sediakan aliran kemas kini",
+            "Wind EDB membekalkan data bulanan dan harga harian boleh diarkib sebagai nilai. Carta bermusim mengekalkan jurang data. Perbandingan bijih besi Dalian dan Singapura memerlukan penyelarasan mata wang, tan basah atau kering dan asas harga."
+          ]
+        ],
+        [
+          [
+            "RB · HC",
+            "Keluli siap dan spread gegelung–tetulang"
+          ],
+          [
+            "I · J · JM",
+            "Kos bahan mentah dan spread"
+          ],
+          [
+            "Bulanan / harian",
+            "Imbangan bermusim dan struktur niaga hadapan"
+          ]
+        ]
+      ],
+      [
+        "citic-futures",
+        "Perniagaan institusi",
+        "Daripada data niaga hadapan China kepada bahan perniagaan dwibahasa",
+        "Di ibu pejabat CITIC Futures, saya menyediakan statistik pasaran, bahan akses pasaran dan penyelidikan institusi untuk pasukan perniagaan antarabangsa.",
+        "CITIC Futures · Perniagaan Antarabangsa",
+        [
+          [
+            "Susun statistik untuk pembentangan",
+            "Saya menyusun volum, nilai dagangan dan kepentingan terbuka mengikut bursa, produk dan tempoh. Saya menyemak liputan produk QFI dan kontrak antarabangsa, menyeragamkan nama, kod dan unit serta membezakan dagangan sepanjang tempoh daripada kedudukan pada satu tarikh."
+          ],
+          [
+            "Sediakan dua pembentangan QFI",
+            "Setiap versi Mandarin dan Inggeris mengandungi 14 slaid tentang pasaran, akses produk, kontrak setara di luar negara, pembukaan akaun, pelaksanaan dan kawalan risiko. Saya menukar jadual Excel kepada bahan taklimat pasaran China."
+          ],
+          [
+            "Kaji institusi asing dan pelanggan industri",
+            "Saya menyediakan ringkasan mengenai firma termasuk StoneX dan Marex. Kajian merangkumi perkhidmatan pembrokeran dan penjelasan, liputan geografi dan kaitan dengan China untuk perbincangan kerjasama dalaman."
+          ]
+        ],
+        [
+          [
+            "2 × 14 slaid",
+            "Pembentangan QFI dalam dua bahasa"
+          ],
+          [
+            "Excel → PPT",
+            "Statistik pasaran untuk taklimat"
+          ],
+          [
+            "StoneX · Marex",
+            "Contoh kajian institusi"
+          ]
+        ]
+      ],
+      [
+        "tusstar-membership",
+        "Operasi dan sistem",
+        "Daripada semakan keahlian kepada proses operasi yang didokumenkan",
+        "Saya menyepadukan rekod lama, cadangan perkhidmatan rentas sempadan, laman pengurusan dan SOP dari pendaftaran hingga pembaharuan serta penamatan keahlian.",
+        "TusStar Malaysia · Keahlian Ekosistem 2.0",
+        [
+          [
+            "Semak rekod dan susun faedah",
+            "Saya menyemak laporan lama, senarai ahli dan faedah. Rekod berulang, status ahli dan pembayaran ditandakan untuk pengesahan. Cadangan ini menetapkan tiga laluan untuk memasuki Malaysia, memasuki China dan rakan ekosistem, dengan padanan, acara dan perkhidmatan kemasukan pasaran."
+          ],
+          [
+            "Bina laman pengurusan",
+            "Laman merangkumi ringkasan, daftar ahli, pendaftaran, permintaan padanan, acara, faedah serta import dan eksport data. Daftar menjejak status, tarikh luput dan interaksi terakhir. Papan pemuka menggabungkan susulan dan angka laporan bulanan."
+          ],
+          [
+            "Tetapkan peranan, tempoh dan serah tugas",
+            "Versi 1.0 mengandungi 12 SOP. Ia meliputi kemasukan prospek, semakan dan bayaran, pengaktifan, padanan, acara, komuniti, pembaharuan dan pelaporan. Permintaan padanan dijejak dari pendaftaran hingga nota mesyuarat dan susulan."
+          ],
+          [
+            "Sokong acara industri China–Malaysia",
+            "Saya menyertai sesi padanan sains dan teknologi Chengdu–Malaysia serta AIFTIS & CMIIE 2026. Saya menyediakan ringkasan acara dan merekod topik susulan tentang inovasi, pembuatan pintar dan kemasukan pasaran luar negara."
+          ]
+        ],
+        [
+          [
+            "3 laluan",
+            "Ke Malaysia · Ke China · Rakan ekosistem"
+          ],
+          [
+            "7 paparan",
+            "Papan pemuka hingga eksport data"
+          ],
+          [
+            "12 SOP",
+            "Peranan dan serah tugas dalam v1.0"
+          ]
+        ]
+      ]
+    ],
+    "jobs": [
+      [
+        "CITIC Futures",
+        "Pelatih Perniagaan Antarabangsa · Ibu Pejabat",
+        "Menyusun data niaga hadapan, menyediakan bahan QFI dwibahasa dan menulis ringkasan kajian institusi asing serta pelanggan industri.",
+        "citic-futures"
+      ],
+      [
+        "TusStar Malaysia",
+        "Pelatih Pentadbiran dan Operasi",
+        "Menyediakan cadangan dan SOP keahlian, membina laman pengurusan dan menyokong program padanan industri.",
+        "tusstar-membership"
+      ],
+      [
+        "GF Securities",
+        "Pelatih Jualan Produk Dana Persendirian",
+        "Mempelajari produk dana dan proses jualan serta menyediakan nota laporan ETF dan istilah kewangan.",
+        null
+      ]
+    ],
+    "demo": [
+      "Daftar ahli · Ilustrasi aliran kerja",
+      "Pendaftaran",
+      "Semakan dan pengaktifan",
+      "Padanan",
+      "Susulan dan pembaharuan",
+      "Perubahan rekod ahli mengikut kemajuan kerja."
+    ],
+    "demoSteps": [
+      [
+        "Dalam semakan",
+        "Rekod sumber, pasaran sasaran dan keperluan. Tetapkan pegawai bertanggungjawab."
+      ],
+      [
+        "Menunggu bayaran → Aktif",
+        "Selepas semakan dan bayaran, rekod tarikh serta rujukan kontrak."
+      ],
+      [
+        "Padanan sedang berjalan",
+        "Pautkan ahli dengan rakan yang dicadangkan dan rekod nota mesyuarat serta tindakan berikutnya."
+      ],
+      [
+        "Pembaharuan perlu dibuat",
+        "Buat susulan 60, 30 dan 7 hari sebelum tamat berdasarkan rekod faedah yang diberikan."
+      ]
+    ],
+    "ui": {
+      "skip": "Langkau ke kandungan",
+      "mainNav": "Navigasi utama",
+      "langNav": "Bahasa",
+      "lead": "Kajian utama",
+      "by": "Oleh",
+      "zoom": "Lihat saiz penuh",
+      "zoomOf": "Lihat saiz penuh: ",
+      "close": "Tutup",
+      "zoomFit": "Muat skrin",
+      "zoomNative": "Saiz asal",
+      "zoomDouble": "Zum 2×",
+      "related": "Hasil kerja lain",
+      "langCode": "MS"
+    },
+    "highlights": {
+      "ferrous": {
+        "title": "Anggaran margin tetulang",
+        "terms": [
+          [
+            "RB",
+            "niaga hadapan tetulang"
+          ],
+          [
+            "1.6 × I",
+            "bijih besi"
+          ],
+          [
+            "0.5 × J",
+            "kok"
+          ],
+          [
+            "kos lain",
+            ""
+          ]
+        ],
+        "note": "Faktor dan kos disimpan dalam helaian andaian buku kerja. Hasilnya ialah anggaran berdasarkan harga niaga hadapan dan andaian, bukan margin sebenar mana-mana kilang."
+      },
+      "citic-futures": {
+        "title": "Hasil kerja: dua pembentangan QFI",
+        "decks": [
+          [
+            "Versi Mandarin",
+            "14 slaid"
+          ],
+          [
+            "Versi Inggeris",
+            "14 slaid"
+          ]
+        ],
+        "items": [
+          "Gambaran pasaran",
+          "Akses produk",
+          "Kontrak setara luar negara",
+          "Pembukaan akaun",
+          "Pelaksanaan",
+          "Kawalan risiko"
+        ],
+        "note": "Kandungan seperti diterangkan dalam kajian kes. Pembentangan asal untuk kegunaan dalaman dan tidak diterbitkan di sini."
+      },
+      "tusstar-membership": {
+        "title": "SOP v1.0",
+        "count": "12",
+        "countLabel": "prosedur operasi standard",
+        "items": [
+          "Prospek",
+          "Semakan dan bayaran",
+          "Pengaktifan",
+          "Padanan",
+          "Acara",
+          "Komuniti",
+          "Pembaharuan",
+          "Pelaporan"
+        ],
+        "note": "Bidang liputan seperti dalam kajian kes; tidak semua prosedur disenaraikan di sini."
+      }
+    }
+  }
+]

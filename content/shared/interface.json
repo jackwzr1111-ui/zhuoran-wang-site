@@ -1,0 +1,48 @@
+{
+  "wordmark": "Zhuoran Wang",
+  "languageSwitch": [
+    "中文",
+    "English",
+    "Bahasa Melayu"
+  ],
+  "linkedin": "https://www.linkedin.com/in/zhuoran-wang-151437325/",
+  "practiceLab": "https://zhuoran-frontdesk-lab.jackandwzr.chatgpt.site",
+  "locales": [
+    {
+      "lang": "zh-CN",
+      "name": "汪卓燃",
+      "location": "马来西亚 · 吉隆坡",
+      "work": "精选作品",
+      "exp": "工作经历",
+      "read": "阅读案例",
+      "home": "返回作品集",
+      "evidence": "研究与交付",
+      "practice": "机构业务训练室",
+      "research": "独立研究"
+    },
+    {
+      "lang": "en",
+      "name": "Zhuoran Wang",
+      "location": "Kuala Lumpur, Malaysia",
+      "work": "Selected work",
+      "exp": "Experience",
+      "read": "Read case study",
+      "home": "Back to portfolio",
+      "evidence": "Analysis and deliverables",
+      "practice": "Institutional business practice lab",
+      "research": "Independent research"
+    },
+    {
+      "lang": "ms",
+      "name": "Zhuoran Wang",
+      "location": "Kuala Lumpur, Malaysia",
+      "work": "Projek pilihan",
+      "exp": "Pengalaman kerja",
+      "read": "Baca kajian kes",
+      "home": "Kembali ke portfolio",
+      "evidence": "Analisis dan hasil kerja",
+      "practice": "Laman latihan perniagaan institusi",
+      "research": "Kajian bebas"
+    }
+  ]
+}

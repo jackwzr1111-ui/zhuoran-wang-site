@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wang-zhuoran.jackandwzr.chatgpt.site/sitemap.xml
