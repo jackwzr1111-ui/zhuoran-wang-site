@@ -11,6 +11,8 @@ ROOT = Path(__file__).resolve().parent
 DIST = ROOT / 'dist'
 LINKEDIN = 'https://www.linkedin.com/in/zhuoran-wang-151437325/'
 LAB = 'https://zhuoran-frontdesk-lab.jackandwzr.chatgpt.site'
+# Google Search Console ownership token for the GitHub Pages property. Keep it, or verification is lost.
+GOOGLE_SITE_VERIFICATION = '85ujjiV8bpENyZ2mHrsleQaIXhjzl0w-IllRL5oOpG0'
 LANGS = loads((ROOT / 'portfolio.json').read_text(encoding='utf-8'))
 LANG_NAV = ('中文', 'English', 'Bahasa Melayu')
 FIGURES = ('inventory-price', 'seasonality', 'energy-spread', 'china-imports')
@@ -135,6 +137,8 @@ def page(site, lang, body, headline, description, case=None, script=False):
     )
     schema = structured_data(site, lang, canonical, headline, description, case)
     zoom = f'\n<script src="{site.href("/zoom.js")}" defer></script>' if script else ''
+    verification = (f'\n<meta name="google-site-verification" content="{GOOGLE_SITE_VERIFICATION}">'
+                    if GOOGLE_SITE_VERIFICATION and not case else '')
     return f"""<!doctype html>
 <html lang="{lang['lang']}">
 <head>
@@ -142,7 +146,7 @@ def page(site, lang, body, headline, description, case=None, script=False):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{h(title)}</title>
 <meta name="description" content="{h(description)}">
-<meta name="robots" content="index,follow">
+<meta name="robots" content="index,follow">{verification}
 <link rel="canonical" href="{canonical}">
 {links}
 <link rel="alternate" hreflang="x-default" href="{site.absolute(url(LANGS[0], case))}">
