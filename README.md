@@ -66,3 +66,9 @@ python tools/check_site.py --site-url https://wang-zhuoran.jackandwzr.chatgpt.si
 - 内容：新增鼎盛家族办公室实习、各段经历时间、沪深 300 多因子回测（注明历史回测）与铜采购套保方案（注明模拟练习）、教育背景、工具与证书、语言、运动经历。全部为站主提供的事实，三语同步。
 - CLAUDE.md P1 · 5 联系入口：首页与每个案例页底部均有“在 LinkedIn 联系我”。
 - 已在 Google Search Console 验证 GitHub Pages 地址并提交 sitemap；首页的 `google-site-verification` 标签不要删除。
+
+## SEO 设置（2026-11-22）
+
+- `build.py` 的 `structured_data()` 生成 Person 结构化数据：中英文名、Wang Zhuoran、Jack Wang、学校、语言、研究领域、所在地、LinkedIn 与邮箱。
+- 社交分享卡片在 `dist/og/og-zh.png`、`og-en.png`、`og-ms.png`（1200×630），由 `og:image` 与 `twitter:card` 引用；网站图标为 `dist/favicon.svg`、`favicon-48.png`、`apple-touch-icon.png`。改名或改方向后需要重新生成分享卡片。
+- Google Search Console 资源为 `https://jackwzr1111-ui.github.io/zhuoran-wang-site/`（网址前缀），已提交 `sitemap.xml`。

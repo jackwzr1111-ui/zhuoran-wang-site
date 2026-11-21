@@ -82,6 +82,13 @@ def case_kind(lang, case):
     return f"{case[1]} · {lang['intern'] if is_internship(lang, case[0]) else lang['research']}"
 
 
+OG_LOCALE = {'zh-CN': 'zh_CN', 'en': 'en_US', 'ms': 'ms_MY'}
+
+
+def og_image(lang):
+    return '/og/og-' + {'zh-CN': 'zh', 'en': 'en', 'ms': 'ms'}[lang['lang']] + '.png'
+
+
 def structured_data(site, lang, canonical, headline, description, case):
     home = site.absolute('/')
     person_id = home + '#zhuoran-wang'
@@ -89,10 +96,19 @@ def structured_data(site, lang, canonical, headline, description, case):
         '@type': 'Person',
         '@id': person_id,
         'name': lang['name'],
-        'alternateName': NAME_EN if lang['lang'] == 'zh-CN' else NAME_ZH,
+        'alternateName': [n for n in (NAME_ZH, NAME_EN, 'Wang Zhuoran', 'Jack Wang') if n != lang['name']],
+        'description': lang['title'],
         'url': home,
         'sameAs': [LINKEDIN],
         'email': f'mailto:{EMAIL}',
+        'homeLocation': {'@type': 'Place', 'name': 'Kuala Lumpur, Malaysia'},
+        'alumniOf': [
+            {'@type': 'CollegeOrUniversity', 'name': 'Universiti Malaya', 'alternateName': '马来亚大学'},
+            {'@type': 'CollegeOrUniversity', 'name': 'Shenzhen MSU-BIT University', 'alternateName': '深圳北理莫斯科大学'},
+        ],
+        'knowsLanguage': ['zh', 'en', 'ru', 'ms'],
+        'knowsAbout': ['Commodity futures', 'Palm oil', 'Ferrous metals', 'Derivatives',
+                       'Institutional sales', 'Cross-border finance', 'QFI'],
     }
     entry = {'url': canonical, 'inLanguage': lang['lang'], 'description': description}
     if case:
@@ -101,6 +117,7 @@ def structured_data(site, lang, canonical, headline, description, case):
             'headline': headline,
             'mainEntityOfPage': canonical,
             'author': {'@id': person_id},
+            'image': site.absolute(og_image(lang)),
         })
         if case == 'palm-oil':
             entry['image'] = [site.absolute(f'/assets/palm-{name}.webp') for name in FIGURES]
@@ -139,6 +156,8 @@ def page(site, lang, body, headline, description, case=None, script=False):
         for label, x in zip(LANG_NAV, LANGS)
     )
     schema = structured_data(site, lang, canonical, headline, description, case)
+    alt_locales = '\n'.join(f'<meta property="og:locale:alternate" content="{OG_LOCALE[x["lang"]]}">'
+                            for x in LANGS if x is not lang)
     zoom = f'\n<script src="{site.href("/zoom.js")}" defer></script>' if script else ''
     verification = (f'\n<meta name="google-site-verification" content="{GOOGLE_SITE_VERIFICATION}">'
                     if GOOGLE_SITE_VERIFICATION and not case else '')
@@ -158,6 +177,18 @@ def page(site, lang, body, headline, description, case=None, script=False):
 <meta property="og:url" content="{canonical}">
 <meta property="og:site_name" content="{SITE_NAME}">
 <meta property="og:type" content="{'article' if case else 'website'}">
+<meta property="og:locale" content="{OG_LOCALE[lang['lang']]}">
+{alt_locales}
+<meta property="og:image" content="{site.absolute(og_image(lang))}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{h(lang['name'])} · {h(lang['title'])}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="author" content="{h(lang['name'])}">
+<link rel="icon" href="{site.href('/favicon.svg')}" type="image/svg+xml">
+<link rel="icon" href="{site.href('/favicon-48.png')}" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="{site.href('/apple-touch-icon.png')}">
+<meta name="theme-color" content="#0b1721">
 <script type="application/ld+json">{schema}</script>
 <link rel="preload" href="{site.href('/fonts/instrument-serif-latin-400-normal.woff2')}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{site.href('/style.css')}">
