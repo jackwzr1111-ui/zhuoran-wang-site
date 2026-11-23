@@ -277,11 +277,10 @@ def homepage(site, lang):
         for c in other
     )
     jobs = ''.join(
-        f'<li class="job reveal"><p class="job-date">{h(dates)}</p>'
-        f'<div class="job-head"><h3>{h(job)}</h3><p class="meta">{h(role)}</p></div>'
-        f'<div class="job-body"><p>{h(desc)}</p>'
+        f'<li class="job reveal"><div class="job-top"><h3>{h(job)}</h3><p class="job-date">{h(dates)}</p></div>'
+        f'<p class="meta">{h(role)}</p><p class="job-desc">{h(desc)}</p>'
         + (f'<a class="text-link" href="{site.href(url(lang, slug))}">{h(lang["read"])} ↗</a>' if slug else '')
-        + '</div></li>'
+        + '</li>'
         for job, role, desc, slug, dates in lang['jobs']
     )
     stats = ''.join(f'<div><dt>{h(label)}</dt><dd>{h(value)}</dd></div>' for value, label in pr['stats'])
@@ -296,7 +295,7 @@ def homepage(site, lang):
                   for school, degree, dates in pr['education'])
     tools = ''.join(f'<li>{h(t)}</li>' for t in pr['tools'])
     creds = ''.join(f'<li>{h(t)}</li>' for t in pr['credentials'])
-    langs = ''.join(f'<li><strong>{h(n)}</strong> <span>{h(level)}</span></li>' for n, level in pr['languages'])
+    langs = ''.join(f'<li><strong>{h(n)}</strong><span>{h(level)}</span></li>' for n, level in pr['languages'])
     beyond = ''.join(f'<li>{h(x)}</li>' for x in pr['beyond'])
     body = f"""<main id="main">
 <section class="hero">
@@ -340,6 +339,7 @@ def homepage(site, lang):
   <div class="section-title"><h2 id="experience-title">{h(lang['exp'])}</h2></div>
   <ol class="timeline">{jobs}</ol>
 </section>
+<div class="duo">
 <section class="projects section" aria-labelledby="projects-title">
   <div class="section-title"><h2 id="projects-title">{h(ui['projects'])}</h2></div>
   <div class="project-grid">{projects}</div>
@@ -347,13 +347,14 @@ def homepage(site, lang):
 <section class="profile section" aria-labelledby="profile-title">
   <div class="section-title"><h2 id="profile-title">{h(ui['profileTitle'])}</h2></div>
   <div class="profile-grid">
-    <div class="reveal"><h3>{h(ui['education'])}</h3><ul class="edu">{edu}</ul></div>
-    <div class="reveal"><h3>{h(ui['tools'])}</h3><ul class="chips">{tools}</ul>
+    <div class="reveal p-edu"><h3>{h(ui['education'])}</h3><ul class="edu">{edu}</ul></div>
+    <div class="reveal p-tools"><h3>{h(ui['tools'])}</h3><ul class="chips">{tools}</ul>
       <h3 class="sub">{h(ui['credentials'])}</h3><ul class="plain">{creds}</ul></div>
-    <div class="reveal"><h3>{h(ui['languages'])}</h3><ul class="langs">{langs}</ul>
-      <h3 class="sub">{h(ui['beyond'])}</h3><ul class="plain">{beyond}</ul></div>
+    <div class="reveal p-langs"><h3>{h(ui['languages'])}</h3><ul class="langs">{langs}</ul></div>
+    <div class="reveal p-beyond"><h3>{h(ui['beyond'])}</h3><ul class="plain">{beyond}</ul></div>
   </div>
 </section>
+</div>
 </div>
 {contact_band(lang)}
 </main>"""
